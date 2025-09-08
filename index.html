@@ -138,7 +138,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
             );
 
             if (filtered.length === 0) {
-                results.innerHTML = "<p>No papers found for the selected criteria.</p>";
+                results.innerHTML = "<p>This paper isn’t uploaded yet. Please give us time. If you have it, share it with us!.</p>";
             } else {
                 results.innerHTML = filtered.map(paper => 
                     `<a href="${paper.link}" target="_blank" class="btn btn-custom d-block my-2">${paper.title}</a>`
@@ -154,6 +154,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
 
 </body>
 </html>
+
 
 
 
