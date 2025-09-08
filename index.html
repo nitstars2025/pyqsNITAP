@@ -138,7 +138,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
             );
 
             if (filtered.length === 0) {
-                results.innerHTML = "<p>This paper isn’t uploaded yet. Please give us time. If you have it, share it with us!.</p>";
+                results.innerHTML = "<p>The paper you are searching for is not uploaded yet. Please give us some time, and we will add it soon. If you have this paper, please share it with us so others can benefit as well!.</p>";
             } else {
                 results.innerHTML = filtered.map(paper => 
                     `<a href="${paper.link}" target="_blank" class="btn btn-custom d-block my-2">${paper.title}</a>`
@@ -154,6 +154,7 @@ document.querySelector("form").addEventListener("submit", function(e) {
 
 </body>
 </html>
+
 
 
 
