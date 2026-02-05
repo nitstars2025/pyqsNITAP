@@ -1,0 +1,131 @@
+body {
+  background-color: #0b0f19;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header-container {
+  background-color: #0b0f19;
+  padding: 15px;
+  border-bottom: 2px solid #444;
+}
+.header-container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-left img {
+  height: 50px;
+}
+.institute-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.institute-name .hi {
+  font-weight: 700;
+  color: #fff;
+}
+.institute-name .en {
+  font-weight: 700;
+  color: #3b82f6;
+  text-decoration: none;
+}
+.institute-name .en:hover {
+  text-decoration: underline;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-right span {
+  color: #6fc457;
+  font-size: 0.9rem;
+}
+.header-right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8a5cf4, #f76ac6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+.hero-title:hover {
+  font-size: 3em;
+}
+
+/* Button */
+.btn-custom {
+  background-color: #7b61ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.btn-custom:hover {
+  background-color: #684edf;
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #5ea870, #6aa2b8);
+  color: white;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-left {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .logo-left img {
+    height: 35px;
+  }
+  .header-right {
+    display: none !important;
+  }
+}
